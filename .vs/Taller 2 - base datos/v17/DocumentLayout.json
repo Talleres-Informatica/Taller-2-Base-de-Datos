@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|c:\\users\\pamev\\desktop\\talleresbd\\taller 2 - base datos\\taller 2 - base datos\\ingresarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\ingresarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\taller 2 - base datos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\taller 2 - base datos\\ingresarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\ingresarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\taller 2 - base datos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\taller 2 - base datos\\realizarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\realizarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\taller 2 - base datos\\ingresarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\ingresarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IngresarUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\IngresarUsuario.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\IngresarUsuario.cs",
+              "ToolTip": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\IngresarUsuario.cs",
+              "RelativeToolTip": "Taller 2 - base datos\\IngresarUsuario.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAA5wCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T15:36:03.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\Form1.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\Form1.cs",
+              "ToolTip": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\Form1.cs",
+              "RelativeToolTip": "Taller 2 - base datos\\Form1.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAD4vygAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T13:25:34.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RealizarVenta.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\RealizarVenta.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\RealizarVenta.cs",
+              "ToolTip": "C:\\Users\\pamev\\source\\repos\\Taller 2 - base datos\\Taller 2 - base datos\\RealizarVenta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\Taller 2 - base datos\\Taller 2 - base datos\\RealizarVenta.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T13:23:29.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IngresarProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\IngresarProducto.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\IngresarProducto.cs",
+              "ToolTip": "C:\\Users\\pamev\\source\\repos\\Taller 2 - base datos\\Taller 2 - base datos\\IngresarProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\Taller 2 - base datos\\Taller 2 - base datos\\IngresarProducto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T13:19:45.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IngresarUsuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\IngresarUsuario.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\IngresarUsuario.cs",
+              "ToolTip": "C:\\Users\\pamev\\source\\repos\\Taller 2 - base datos\\Taller 2 - base datos\\IngresarUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\Taller 2 - base datos\\Taller 2 - base datos\\IngresarUsuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T12:41:56.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\Form1.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\Form1.cs",
+              "ToolTip": "C:\\Users\\pamev\\source\\repos\\Taller 2 - base datos\\Taller 2 - base datos\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\Taller 2 - base datos\\Taller 2 - base datos\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T20:38:07.435Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
