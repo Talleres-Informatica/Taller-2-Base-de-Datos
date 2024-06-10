@@ -99,6 +99,7 @@
             this.BtnIngresarProducto.TabIndex = 6;
             this.BtnIngresarProducto.Text = "Ingresar";
             this.BtnIngresarProducto.UseVisualStyleBackColor = true;
+            this.BtnIngresarProducto.Click += new System.EventHandler(this.BtnIngresarProducto_Click);
             // 
             // IngresarProducto
             // 

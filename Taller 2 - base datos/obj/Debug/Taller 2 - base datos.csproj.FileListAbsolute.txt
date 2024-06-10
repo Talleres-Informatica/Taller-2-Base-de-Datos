@@ -11,3 +11,48 @@ C:\Users\pamev\source\repos\Taller 2 - base datos\Taller 2 - base datos\obj\Debu
 C:\Users\pamev\source\repos\Taller 2 - base datos\Taller 2 - base datos\obj\Debug\Taller 2 - base datos.exe
 C:\Users\pamev\source\repos\Taller 2 - base datos\Taller 2 - base datos\obj\Debug\Taller 2 - base datos.pdb
 C:\Users\pamev\source\repos\Taller 2 - base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.RealizarVenta.resources
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\Taller 2 - base datos.exe.config
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\Taller 2 - base datos.exe
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\Taller 2 - base datos.pdb
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\Google.Protobuf.dll
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\MySql.Data.dll
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\System.Buffers.dll
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\System.IO.Pipelines.dll
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\System.Memory.dll
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\ZstdSharp.dll
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\Google.Protobuf.pdb
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\Google.Protobuf.xml
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\MySql.Data.xml
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\System.Buffers.xml
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\System.IO.Pipelines.xml
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\System.Memory.xml
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller 2 - base datos.csproj.AssemblyReference.cache
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.Form1.resources
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.IngresarProducto.resources
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.IngresarUsuario.resources
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.Properties.Resources.resources
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.RealizarVenta.resources
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller 2 - base datos.csproj.GenerateResource.cache
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller 2 - base datos.csproj.CoreCompileInputs.cache
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller 2.5FC09BD6.Up2Date
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller 2 - base datos.exe
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller 2 - base datos.pdb

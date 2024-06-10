@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Taller2;
 
 namespace Taller_2___base_datos
 {
@@ -25,7 +26,11 @@ namespace Taller_2___base_datos
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //ConnectMySQL.Instance.OpenConnection();
+            //ConnectMySQL.Instance.CloseConnection();
+            ConnectMySQL.Instance.SelectQuery(null);
+            ConnectMySQL.Instance.SelectQueryScalar(null);
+            ConnectMySQL.Instance.ExecuteQuery(null);
         }
 
         private void BtnVerCliente_Click(object sender, EventArgs e)

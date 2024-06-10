@@ -31,5 +31,10 @@ namespace Taller_2___base_datos
         {
 
         }
+
+        private void BtnIngresarProducto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
