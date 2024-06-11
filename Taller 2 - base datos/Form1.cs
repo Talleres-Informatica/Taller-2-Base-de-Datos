@@ -20,8 +20,8 @@ namespace Taller_2___base_datos
 
         private void BtnVerProyecto_Click(object sender, EventArgs e)
         {
-            IngresarProducto ingresarProducto = new IngresarProducto();
-            ingresarProducto.Show();
+            MenuProducto menuProducto = new MenuProducto();
+            menuProducto.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -19,26 +19,28 @@ namespace Taller_2___base_datos
             InitializeComponent();
         }
 
+        private void EliminarProducto_Load(object sender, EventArgs e)
+        {
+            string query = "SELECT idProducto, nombre, stockProducto, precioProducto  FROM productos WHERE estado = 0";
+            DataTable data = ConnectMySQL.Instance.SelectQuery(query);
+            dataListaProducto.DataSource = data;
+        }
+
         private void BtnEliminarProducto_Click(object sender, EventArgs e)
         {
-            string query = "UPDATE clientes SET estado = 1 WHERE id = @id";
+            string query = "UPDATE producto SET estado = 1 WHERE idProducto = @idProducto";
 
             MySqlParameter[] parameters = {
-                new MySqlParameter("@id", dataLista.CurrentCell.Value)
+                new MySqlParameter("@idProducto", dataListaProducto.CurrentCell.Value)
             };
 
             ConnectMySQL.Instance.ExecuteQuery(query, parameters);
-            MessageBox.Show("Cliente eliminado con exito");
+            MessageBox.Show("Producto eliminado con exito");
 
 
-            query = "SELECT id, nombre, ciudad FROM clientes WHERE estado = 0";
+            query = "SELECT idProducto, nombre, stockProducto, precioProducto FROM productos WHERE estado = 0";
             DataTable data = ConnectMySQL.Instance.SelectQuery(query);
-            dataLista.DataSource = data;
-        }
-
-        private void EliminarProducto_Load(object sender, EventArgs e)
-        {
-
+            dataListaProducto.DataSource = data;
         }
     }
 }

@@ -33,5 +33,12 @@ namespace Taller_2___base_datos
             EliminarCliente eliminarCliente = new EliminarCliente();
             eliminarCliente.Show();
         }
+
+        private void BtnListaPremium_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
