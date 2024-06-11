@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Taller2;
 
 namespace Taller_2___base_datos
 {
@@ -34,6 +36,18 @@ namespace Taller_2___base_datos
 
         private void BtnIngresarProducto_Click(object sender, EventArgs e)
         {
+            string query = "INSERT INTO Producto(nombreProducto, stockProducto, precioProducto) VALUES(@nombreProducto, @stockProducto, @precioProducto)";
+
+            MySqlParameter[] parameters =
+            {
+            new MySqlParameter("@nombreProducto", NombreProductoInput),
+            new MySqlParameter("@stockProducto", StockProductoInput),
+            new MySqlParameter("@precioProdcuto", PrecioProductoInput)
+            };
+            ConnectMySQL.Instance.ExecuteQuery(query, parameters);
+            //MensageBox.Show("Cliente normal ingresado con exito");
+            //TODO: HACER ERROR
+            
 
         }
     }

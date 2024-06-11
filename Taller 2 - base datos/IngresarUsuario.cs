@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Taller2;
 
 namespace Taller_2___base_datos
 {
@@ -34,6 +36,32 @@ namespace Taller_2___base_datos
 
         private void BtnIngresarCliente_Click(object sender, EventArgs e)
         {
+            string query = "INSERT INTO clientes(nombre, ciudad, tipo) VALUES(@nombre, @ciudad, @tipo)";
+
+            if (ListaCliente.Text == "Normal")
+            {
+                MySqlParameter[] parameters =
+                    {
+                    new MySqlParameter("@nombre", NombreInput),
+                    new MySqlParameter("@ciudad", CiudadInput),
+                    new MySqlParameter("@tipo", 1)
+                };
+                ConnectMySQL.Instance.ExecuteQuery(query, parameters);
+                //MensageBox.Show("Cliente normal ingresado con exito");
+                //TODO: HACER ERROR
+            }
+
+            else
+            {
+                MySqlParameter[] parameters = {
+                    new MySqlParameter("@nombre", NombreInput),
+                    new MySqlParameter("@ciudad", CiudadInput),
+                    new MySqlParameter("@tipo", 1)
+                };
+                ConnectMySQL.Instance.ExecuteQuery(query, parameters);
+                //MenssageBox.Show("Cliente premium ingresado con exito");
+                //TODO: HACER ERROR
+            }
 
         }
     }
