@@ -51,7 +51,7 @@ namespace Taller_2___base_datos
                 //TODO: HACER ERROR
             }
 
-            else
+            else if (ListaCliente.Text == "Premium")
             {
                 MySqlParameter[] parameters = {
                     new MySqlParameter("@nombre", NombreInput),
@@ -59,8 +59,13 @@ namespace Taller_2___base_datos
                     new MySqlParameter("@tipo", 1)
                 };
                 ConnectMySQL.Instance.ExecuteQuery(query, parameters);
-                //MenssageBox.Show("Cliente premium ingresado con exito");
+                MessageBox.Show("Cliente premium ingresado con exito");
                 //TODO: HACER ERROR
+            }
+
+            else
+            {
+                MessageBox.Show("debes ingresar un tipo de cliente");
             }
 
         }

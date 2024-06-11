@@ -46,7 +46,7 @@
             // 
             // BtnEliminar
             // 
-            this.BtnEliminar.Location = new System.Drawing.Point(269, 315);
+            this.BtnEliminar.Location = new System.Drawing.Point(342, 351);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(75, 23);
             this.BtnEliminar.TabIndex = 1;
@@ -56,12 +56,13 @@
             // 
             // dataLista
             // 
+            this.dataLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataLista.Location = new System.Drawing.Point(178, 118);
+            this.dataLista.Location = new System.Drawing.Point(203, 104);
             this.dataLista.Name = "dataLista";
             this.dataLista.RowHeadersWidth = 51;
             this.dataLista.RowTemplate.Height = 24;
-            this.dataLista.Size = new System.Drawing.Size(240, 150);
+            this.dataLista.Size = new System.Drawing.Size(357, 186);
             this.dataLista.TabIndex = 2;
             this.dataLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataLista_CellContentClick);
             // 

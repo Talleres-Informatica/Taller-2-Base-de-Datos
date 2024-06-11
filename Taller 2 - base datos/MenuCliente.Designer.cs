@@ -100,13 +100,13 @@
             // 
             // BtnListaCliente
             // 
-            this.BtnListaCliente.Location = new System.Drawing.Point(534, 214);
+            this.BtnListaCliente.Location = new System.Drawing.Point(533, 214);
             this.BtnListaCliente.Name = "BtnListaCliente";
             this.BtnListaCliente.Size = new System.Drawing.Size(75, 23);
-            this.BtnListaCliente.TabIndex = 7;
+            this.BtnListaCliente.TabIndex = 6;
             this.BtnListaCliente.Text = "Ver";
             this.BtnListaCliente.UseVisualStyleBackColor = true;
-            this.BtnListaCliente.Click += new System.EventHandler(this.BtnListaPremium_Click);
+            this.BtnListaCliente.Click += new System.EventHandler(this.BtnListaCliente_Click);
             // 
             // MenuCliente
             // 

@@ -34,11 +34,10 @@ namespace Taller_2___base_datos
             eliminarCliente.Show();
         }
 
-        private void BtnListaPremium_Click(object sender, EventArgs e)
+        private void BtnListaCliente_Click(object sender, EventArgs e)
         {
-
+            ListaCliente listaCliente = new ListaCliente();
+            listaCliente.Show();
         }
-
-        
     }
 }
