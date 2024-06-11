@@ -3,7 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\taller 2 - base datos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|c:\\users\\pamev\\desktop\\talleresbd\\taller 2 - base datos\\taller 2 - base datos\\eliminarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\eliminarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|c:\\users\\pamev\\desktop\\talleresbd\\taller 2 - base datos\\taller 2 - base datos\\eliminarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\eliminarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|c:\\users\\pamev\\desktop\\talleresbd\\taller 2 - base datos\\taller 2 - base datos\\menuproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\menuproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|c:\\users\\pamev\\desktop\\talleresbd\\taller 2 - base datos\\taller 2 - base datos\\eliminarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\eliminarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|c:\\users\\pamev\\desktop\\talleresbd\\taller 2 - base datos\\taller 2 - base datos\\eliminarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\eliminarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|c:\\users\\pamev\\desktop\\talleresbd\\taller 2 - base datos\\taller 2 - base datos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|c:\\users\\pamev\\desktop\\talleresbd\\taller 2 - base datos\\taller 2 - base datos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -14,11 +38,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EliminarProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\EliminarProducto.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\EliminarProducto.cs",
+              "ToolTip": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\EliminarProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Taller 2 - base datos\\EliminarProducto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T20:52:34.535Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EliminarProducto.cs",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\EliminarProducto.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\EliminarProducto.cs",
+              "ToolTip": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\EliminarProducto.cs",
+              "RelativeToolTip": "Taller 2 - base datos\\EliminarProducto.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAewCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T20:54:09.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\MenuProducto.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\MenuProducto.cs",
+              "ToolTip": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\MenuProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Taller 2 - base datos\\MenuProducto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T20:52:14.948Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EliminarCliente.cs",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\EliminarCliente.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\EliminarCliente.cs",
+              "ToolTip": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\EliminarCliente.cs",
+              "RelativeToolTip": "Taller 2 - base datos\\EliminarCliente.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAxwC4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T20:35:36.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EliminarCliente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\EliminarCliente.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\EliminarCliente.cs",
+              "ToolTip": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\EliminarCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Taller 2 - base datos\\EliminarCliente.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T16:26:15.763Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\Form1.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\Form1.cs",
+              "ToolTip": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\Form1.cs",
+              "RelativeToolTip": "Taller 2 - base datos\\Form1.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAWwCYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T16:31:20.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\Form1.cs",
               "RelativeDocumentMoniker": "Taller 2 - base datos\\Form1.cs",

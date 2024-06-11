@@ -35,8 +35,8 @@ namespace Taller_2___base_datos
 
         private void BtnVerCliente_Click(object sender, EventArgs e)
         {
-            IngresarUsuario ingresarUsuario = new IngresarUsuario();
-            ingresarUsuario.Show();
+            MenuCliente menuCliente = new MenuCliente();
+            menuCliente.Show();
 
         }
 

@@ -47,7 +47,7 @@ namespace Taller_2___base_datos
                     new MySqlParameter("@tipo", 1)
                 };
                 ConnectMySQL.Instance.ExecuteQuery(query, parameters);
-                //MensageBox.Show("Cliente normal ingresado con exito");
+                MessageBox.Show("Cliente normal ingresado con exito");
                 //TODO: HACER ERROR
             }
 

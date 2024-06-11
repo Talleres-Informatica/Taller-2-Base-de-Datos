@@ -56,3 +56,4 @@ C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\ob
 C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller 2.5FC09BD6.Up2Date
 C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller 2 - base datos.exe
 C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller 2 - base datos.pdb
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.MenuCliente.resources

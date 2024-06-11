@@ -45,7 +45,7 @@ namespace Taller_2___base_datos
             new MySqlParameter("@precioProdcuto", PrecioProductoInput)
             };
             ConnectMySQL.Instance.ExecuteQuery(query, parameters);
-            //MensageBox.Show("Cliente normal ingresado con exito");
+            MessageBox.Show("Cliente normal ingresado con exito");
             //TODO: HACER ERROR
             
 
