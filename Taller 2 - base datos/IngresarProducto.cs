@@ -36,7 +36,7 @@ namespace Taller_2___base_datos
 
         private void BtnIngresarProducto_Click(object sender, EventArgs e)
         {
-            string query = "INSERT INTO producto (nombreProducto, stockProducto, precioProducto) VALUES (@nombreProducto, @stockProducto, @precioProducto);";
+            string query = "INSERT INTO producto (nombreProducto, stockProducto, precioProducto) VALUES (@nombreProducto, @stockProducto, @precioProducto, 0);";
 
             MySqlParameter[] parameters =
             {

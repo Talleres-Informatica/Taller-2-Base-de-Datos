@@ -56,7 +56,7 @@ namespace Taller_2___base_datos
                 MySqlParameter[] parameters = {
                     new MySqlParameter("@nombre", NombreInput.Text),
                     new MySqlParameter("@ciudad", CiudadInput.Text),
-                    new MySqlParameter("@tipo", 1),
+                    new MySqlParameter("@tipo", 2),
                 };
 
                 ConnectMySQL.Instance.ExecuteQuery(query, parameters);

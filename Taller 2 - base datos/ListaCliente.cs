@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,8 @@ namespace Taller_2___base_datos
 
         private void BtnVerListaCliente_Click(object sender, EventArgs e)
         {
+
+
             if (ListaTipobox.Text == "Normal")
             {
                 string query = "SELECT id, nombre, ciudad  FROM cliente WHERE tipo = 1";
@@ -34,7 +37,7 @@ namespace Taller_2___base_datos
 
             else if (ListaTipobox.Text == "Premium")
             {
-                string query = "SELECT id, nombre, ciudad  FROM cliente WHERE tipo = 0";
+                string query = "SELECT id, nombre, ciudad  FROM cliente WHERE tipo = 2";
                 DataTable data = ConnectMySQL.Instance.SelectQuery(query);
                 dataListaCliente.DataSource = data;
             }
@@ -50,6 +53,28 @@ namespace Taller_2___base_datos
             {
                 MessageBox.Show("Debes ingresar un tipo de cliente");
             }
+        }
+
+        private void CtnClientes_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ListaCliente_Load(object sender, EventArgs e)
+        {
+            string query = "SELECT COUNT(*) FROM cliente WHERE tipo = 1";
+
+            ConnectMySQL.Instance.SelectQuery(query);
+
+            CtnClientes.TEXT
+
+            
+            
+        }
+
+        private void ListaTipobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

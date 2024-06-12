@@ -28,5 +28,17 @@ namespace Taller_2___base_datos
             IngresarProducto ingresarProducto = new IngresarProducto(); 
             ingresarProducto.Show();
         }
+
+        private void BtnVerEliminarProducto_Click(object sender, EventArgs e)
+        {
+            EliminarProducto eliminarProducto = new EliminarProducto();
+            eliminarProducto.Show();
+        }
+
+        private void BtnListaProducto_Click(object sender, EventArgs e)
+        {
+            ListaProducto listaProducto = new ListaProducto();
+            listaProducto.Show();
+        }
     }
 }

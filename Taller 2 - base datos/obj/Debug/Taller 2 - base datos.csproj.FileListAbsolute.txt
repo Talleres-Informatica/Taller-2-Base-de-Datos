@@ -61,3 +61,4 @@ C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\ob
 C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.EliminarProducto.resources
 C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.ListaCliente.resources
 C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.MenuProducto.resources
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.ListaProducto.resources

@@ -12,35 +12,40 @@ using Taller2;
 
 namespace Taller_2___base_datos
 {
-    public partial class EliminarProducto : Form
+    public partial class ListaProducto : Form
     {
-        public EliminarProducto()
+        public ListaProducto()
         {
             InitializeComponent();
         }
 
-        private void EliminarProducto_Load(object sender, EventArgs e)
+        private void ListaProducto_Load(object sender, EventArgs e)
         {
             string query = "SELECT idProducto, nombreProducto, stockProducto, precioProducto  FROM producto WHERE estado = 0";
             DataTable data = ConnectMySQL.Instance.SelectQuery(query);
-            dataListaProducto.DataSource = data;
+            dataLista.DataSource = data;
         }
 
-        private void BtnEliminarProducto_Click(object sender, EventArgs e)
+        private void BtnEliminarListaProducto_Click(object sender, EventArgs e)
         {
-            string query = "UPDATE producto SET estado = 1 WHERE idProducto = @idProducto";
+            string query = "UPDATE producto SET estado = 1 WHERE idProducto = @idProducto;";
 
             MySqlParameter[] parameters = {
-                new MySqlParameter("@idProducto", dataListaProducto.CurrentCell.Value)
+                new MySqlParameter("@idProducto", dataLista.CurrentCell.Value)
             };
 
             ConnectMySQL.Instance.ExecuteQuery(query, parameters);
             MessageBox.Show("Producto eliminado con exito");
 
 
-            query = "SELECT idProducto, nombreProducto, stockProducto, precioProducto FROM producto WHERE estado = 0";
+            query = "SELECT idProducto, nombreProducto, stockProducto, precioProducto FROM producto WHERE estado = 0;";
             DataTable data = ConnectMySQL.Instance.SelectQuery(query);
-            dataListaProducto.DataSource = data;
+            dataLista.DataSource = data;
+        }
+
+        private void TotalCliente_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

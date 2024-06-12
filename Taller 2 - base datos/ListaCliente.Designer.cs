@@ -33,6 +33,8 @@
             this.dataListaCliente = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnVerListaCliente = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.CtnClientes = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataListaCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,6 +59,7 @@
             this.ListaTipobox.Name = "ListaTipobox";
             this.ListaTipobox.Size = new System.Drawing.Size(121, 24);
             this.ListaTipobox.TabIndex = 1;
+            this.ListaTipobox.SelectedIndexChanged += new System.EventHandler(this.ListaTipobox_SelectedIndexChanged);
             // 
             // dataListaCliente
             // 
@@ -90,11 +93,34 @@
             this.BtnVerListaCliente.UseVisualStyleBackColor = true;
             this.BtnVerListaCliente.Click += new System.EventHandler(this.BtnVerListaCliente_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(25, 390);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(128, 25);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Total Cliente:";
+            // 
+            // CtnClientes
+            // 
+            this.CtnClientes.AutoSize = true;
+            this.CtnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CtnClientes.Location = new System.Drawing.Point(159, 390);
+            this.CtnClientes.Name = "CtnClientes";
+            this.CtnClientes.Size = new System.Drawing.Size(86, 25);
+            this.CtnClientes.TabIndex = 6;
+            this.CtnClientes.Text = "cantidad";
+            this.CtnClientes.Click += new System.EventHandler(this.CtnClientes_Click);
+            // 
             // ListaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CtnClientes);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.BtnVerListaCliente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataListaCliente);
@@ -102,6 +128,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ListaCliente";
             this.Text = "ListaCliente";
+            this.Load += new System.EventHandler(this.ListaCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataListaCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -115,5 +142,7 @@
         private System.Windows.Forms.DataGridView dataListaCliente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnVerListaCliente;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label CtnClientes;
     }
 }
