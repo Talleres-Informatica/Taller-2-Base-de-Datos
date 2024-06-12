@@ -26,14 +26,14 @@ namespace Taller_2___base_datos
 
         private void EliminarCliente_Load(object sender, EventArgs e)
         {
-            string query = "SELECT id, nombre,ciudad  FROM clientes WHERE estado = 0";
+            string query = "SELECT id, nombre,ciudad  FROM cliente WHERE estado = 0";
             DataTable data = ConnectMySQL.Instance.SelectQuery(query);
             dataLista.DataSource = data;
         }
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
-            string query = "UPDATE clientes SET estado = 1 WHERE id = @id";
+            string query = "UPDATE cliente SET estado = 1 WHERE id = @id;";
 
             MySqlParameter[] parameters = {
                 new MySqlParameter("@id", dataLista.CurrentCell.Value) 
@@ -43,7 +43,7 @@ namespace Taller_2___base_datos
             MessageBox.Show("Cliente eliminado con exito");
 
 
-            query = "SELECT id, nombre, ciudad FROM clientes WHERE estado = 0";
+            query = "SELECT id, nombre, ciudad FROM cliente WHERE estado = 0;";
             DataTable data = ConnectMySQL.Instance.SelectQuery(query);
             dataLista.DataSource = data;
 

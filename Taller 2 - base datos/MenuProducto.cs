@@ -16,5 +16,17 @@ namespace Taller_2___base_datos
         {
             InitializeComponent();
         }
+
+        private void BtnModificarProducto_Click(object sender, EventArgs e)
+        {
+            ModificarProducto modificarProducto = new ModificarProducto();
+            modificarProducto.Show();
+        }
+
+        private void BtnAgregarProducto_Click(object sender, EventArgs e)
+        {
+            IngresarProducto ingresarProducto = new IngresarProducto(); 
+            ingresarProducto.Show();
+        }
     }
 }

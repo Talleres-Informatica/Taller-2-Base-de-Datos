@@ -36,14 +36,14 @@ namespace Taller_2___base_datos
 
         private void BtnIngresarCliente_Click(object sender, EventArgs e)
         {
-            string query = "INSERT INTO clientes(nombre, ciudad, tipo) VALUES(@nombre, @ciudad, @tipo)";
+            string query = "INSERT INTO cliente (nombre, ciudad, tipo, estado) VALUES (@nombre, @ciudad, @tipo, 0)";
 
             if (ListaCliente.Text == "Normal")
             {
                 MySqlParameter[] parameters =
                     {
-                    new MySqlParameter("@nombre", NombreInput),
-                    new MySqlParameter("@ciudad", CiudadInput),
+                    new MySqlParameter("@nombre", NombreInput.Text),
+                    new MySqlParameter("@ciudad", CiudadInput.Text),
                     new MySqlParameter("@tipo", 1)
                 };
                 ConnectMySQL.Instance.ExecuteQuery(query, parameters);
@@ -54,10 +54,11 @@ namespace Taller_2___base_datos
             else if (ListaCliente.Text == "Premium")
             {
                 MySqlParameter[] parameters = {
-                    new MySqlParameter("@nombre", NombreInput),
-                    new MySqlParameter("@ciudad", CiudadInput),
-                    new MySqlParameter("@tipo", 1)
+                    new MySqlParameter("@nombre", NombreInput.Text),
+                    new MySqlParameter("@ciudad", CiudadInput.Text),
+                    new MySqlParameter("@tipo", 1),
                 };
+
                 ConnectMySQL.Instance.ExecuteQuery(query, parameters);
                 MessageBox.Show("Cliente premium ingresado con exito");
                 //TODO: HACER ERROR

@@ -20,23 +20,28 @@ namespace Taller_2___base_datos
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(ListaTipobox.Text == "Normal")
+            
+        }
+
+        private void BtnVerListaCliente_Click(object sender, EventArgs e)
+        {
+            if (ListaTipobox.Text == "Normal")
             {
-                string query = "SELECT id, nombre, ciudad  FROM clientes WHERE tipo = 1";
+                string query = "SELECT id, nombre, ciudad  FROM cliente WHERE tipo = 1";
                 DataTable data = ConnectMySQL.Instance.SelectQuery(query);
                 dataListaCliente.DataSource = data;
             }
 
-            else if (ListaTipobox.Text == "Premium") 
+            else if (ListaTipobox.Text == "Premium")
             {
-                string query = "SELECT id, nombre, ciudad  FROM clientes WHERE tipo = 0";
+                string query = "SELECT id, nombre, ciudad  FROM cliente WHERE tipo = 0";
                 DataTable data = ConnectMySQL.Instance.SelectQuery(query);
                 dataListaCliente.DataSource = data;
             }
 
             else if (ListaTipobox.Text == "Todos")
             {
-                string query = "SELECT id, nombre, ciudad  FROM clientes WHERE estado = 0";
+                string query = "SELECT id, nombre, ciudad  FROM cliente WHERE estado = 0";
                 DataTable data = ConnectMySQL.Instance.SelectQuery(query);
                 dataListaCliente.DataSource = data;
             }

@@ -32,6 +32,7 @@
             this.ListaTipobox = new System.Windows.Forms.ComboBox();
             this.dataListaCliente = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.BtnVerListaCliente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataListaCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,11 +80,22 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Tipo";
             // 
+            // BtnVerListaCliente
+            // 
+            this.BtnVerListaCliente.Location = new System.Drawing.Point(57, 263);
+            this.BtnVerListaCliente.Name = "BtnVerListaCliente";
+            this.BtnVerListaCliente.Size = new System.Drawing.Size(75, 23);
+            this.BtnVerListaCliente.TabIndex = 4;
+            this.BtnVerListaCliente.Text = "Ver";
+            this.BtnVerListaCliente.UseVisualStyleBackColor = true;
+            this.BtnVerListaCliente.Click += new System.EventHandler(this.BtnVerListaCliente_Click);
+            // 
             // ListaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnVerListaCliente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataListaCliente);
             this.Controls.Add(this.ListaTipobox);
@@ -102,5 +114,6 @@
         private System.Windows.Forms.ComboBox ListaTipobox;
         private System.Windows.Forms.DataGridView dataListaCliente;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button BtnVerListaCliente;
     }
 }

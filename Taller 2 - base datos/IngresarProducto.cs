@@ -36,19 +36,20 @@ namespace Taller_2___base_datos
 
         private void BtnIngresarProducto_Click(object sender, EventArgs e)
         {
-            string query = "INSERT INTO Producto(nombreProducto, stockProducto, precioProducto) VALUES(@nombreProducto, @stockProducto, @precioProducto)";
+            string query = "INSERT INTO producto (nombreProducto, stockProducto, precioProducto) VALUES (@nombreProducto, @stockProducto, @precioProducto);";
 
             MySqlParameter[] parameters =
             {
-            new MySqlParameter("@nombreProducto", NombreProductoInput),
-            new MySqlParameter("@stockProducto", StockProductoInput),
-            new MySqlParameter("@precioProdcuto", PrecioProductoInput)
+            new MySqlParameter("@nombreProducto", NombreProductoInput.Text),
+            new MySqlParameter("@stockProducto", StockProductoInput.Text),
+            new MySqlParameter("@precioProducto", PrecioProductoInput.Text)
             };
-            ConnectMySQL.Instance.ExecuteQuery(query, parameters);
-            MessageBox.Show("Cliente normal ingresado con exito");
-            //TODO: HACER ERROR
-            
 
+            Console.WriteLine(NombreProductoInput.Text + " ");
+
+            ConnectMySQL.Instance.ExecuteQuery(query, parameters);
+            MessageBox.Show("Producto ingresado con exito");
+            //TODO: HACER ERROR
         }
     }
 }

@@ -4,12 +4,16 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Google.Protobuf.WellKnownTypes;
 using MySql.Data.MySqlClient;
 
 namespace Taller2
 {
     public class ConnectMySQL
     {
+
+        private const string FormatConnection = "server={0};port={1};user id={2};password ={3};database={4};SslMode={5}";
+
         private MySqlConnection connection;
 
         // Se crea una instancia de tipo privada al compilar el proyecto
@@ -27,14 +31,26 @@ namespace Taller2
         private string username;
         private string password;
 
+        private string connectionString;
+
         private ConnectMySQL()
         {
             server = "localhost";
             database = "taller2";
             username = "root";
             password = "Amor1022";
+            string port = "3306";
 
-            string connectionString = $"SERVER={server};DATABASE={database};UID={username};PASSWORD={password};";
+            connectionString =
+                String.Format(FormatConnection,
+                server,
+                port,
+                username,
+                password,
+                database,
+                "none");
+
+            Console.WriteLine(connectionString);
 
             connection = new MySqlConnection(connectionString);
             connection.Open();
@@ -76,6 +92,7 @@ namespace Taller2
             {
                 OpenConnection();
 
+                Console.WriteLine(query);
                 MySqlCommand command = new MySqlCommand(query, connection);
 
                 if (parameters != null && parameters.Length > 0)
@@ -133,29 +150,64 @@ namespace Taller2
         /// <param name="values">Los valores de los parámetros de la consulta.</param>
         /// <returns>Un objeto DataTable que contiene los resultados de la consulta.</returns>
 
-        public DataTable SelectQuery(string query, params string[] values)
+        /*public DataTable SelectQuery(string query, params string[] values)
         {
-            using (MySqlCommand cmd = new MySqlCommand())
+
+            Console.WriteLine("Query: " + query);
+
+            var command = new MySqlCommand(query, connection);
+
+            for (int pos = 0; pos < values.Length; pos += 2)
             {
-                MySqlConnection connection = ConnectMySQL.Instance.GetConnection();
-                cmd.Connection = connection;
-                cmd.CommandText = query;
+                command.Parameters.AddWithValue(values[pos], values[pos + 1]);
+            }
+            command.Connection = connection;
+            command.CommandText = query;
 
-                for (int pos = 0; pos < values.Length; pos += 2)
-                {
-                    cmd.Parameters.AddWithValue(values[pos], values[pos + 1]);
-                }
+            using (MySqlDataReader reader = command.ExecuteReader())
+            {
 
-                connection.Open();
-                MySqlDataReader reader = cmd.ExecuteReader();
                 DataTable dt = new DataTable();
                 dt.Load(reader);
-                connection.Close();
 
                 return dt;
             }
+
+
+
+        }*/
+
+        public DataTable SelectQuery(string query, params string[] values)
+        {
+
+            Console.WriteLine("Query: " + query);
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+
+                conn.Open();
+
+                var command = new MySqlCommand(query, conn);
+
+                for (int pos = 0; pos < values.Length; pos += 2)
+                {
+                    command.Parameters.AddWithValue(values[pos], values[pos + 1]);
+                }
+                //command.Connection = connection;
+                //command.CommandText = query;
+
+                using (MySqlDataReader reader = command.ExecuteReader())
+                {
+
+                    DataTable dt = new DataTable();
+                    dt.Load(reader);
+
+                    return dt;
+                }
+
+            }
+
         }
 
     }
-
 }

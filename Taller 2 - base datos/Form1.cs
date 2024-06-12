@@ -28,9 +28,9 @@ namespace Taller_2___base_datos
         {
             //ConnectMySQL.Instance.OpenConnection();
             //ConnectMySQL.Instance.CloseConnection();
-            ConnectMySQL.Instance.SelectQuery(null);
-            ConnectMySQL.Instance.SelectQueryScalar(null);
-            ConnectMySQL.Instance.ExecuteQuery(null);
+            //ConnectMySQL.Instance.SelectQuery(null);
+            //ConnectMySQL.Instance.SelectQueryScalar(null);
+            //ConnectMySQL.Instance.ExecuteQuery(null);
         }
 
         private void BtnVerCliente_Click(object sender, EventArgs e)
