@@ -36,13 +36,13 @@ namespace Taller_2___base_datos
 
         private void BtnIngresarProducto_Click(object sender, EventArgs e)
         {
-            string query = "INSERT INTO producto (nombreProducto, stockProducto, precioProducto) VALUES (@nombreProducto, @stockProducto, @precioProducto, 0);";
+            string query = "INSERT INTO producto (nombreProducto, stockProducto, precioProducto, estado) VALUES (@nombreProducto, @stockProducto, @precioProducto, 0);";
 
             MySqlParameter[] parameters =
             {
-            new MySqlParameter("@nombreProducto", NombreProductoInput.Text),
-            new MySqlParameter("@stockProducto", StockProductoInput.Text),
-            new MySqlParameter("@precioProducto", PrecioProductoInput.Text)
+                new MySqlParameter("@nombreProducto", NombreProductoInput.Text),
+                new MySqlParameter("@stockProducto", StockProductoInput.Text),
+                new MySqlParameter("@precioProducto", PrecioProductoInput.Text)
             };
 
             Console.WriteLine(NombreProductoInput.Text + " ");

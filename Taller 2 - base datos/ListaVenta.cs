@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Taller_2___base_datos
 {
-    public partial class RealizarVenta : Form
+    public partial class ListaVenta : Form
     {
-        public RealizarVenta()
+        public ListaVenta()
         {
             InitializeComponent();
-        }
-
-        private void BtnListaVenta_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

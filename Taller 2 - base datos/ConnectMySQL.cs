@@ -123,6 +123,7 @@ namespace Taller2
         {
             using (MySqlCommand cmd = new MySqlCommand())
             {
+
                 MySqlConnection connection = ConnectMySQL.Instance.GetConnection();
                 cmd.Connection = connection;
                 cmd.CommandText = query;
@@ -211,3 +212,5 @@ namespace Taller2
 
     }
 }
+
+

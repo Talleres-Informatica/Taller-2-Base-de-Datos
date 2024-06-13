@@ -99,15 +99,16 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(25, 390);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(128, 25);
+            this.label3.Size = new System.Drawing.Size(171, 25);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Total Cliente:";
+            this.label3.Text = "Clientes Premium:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // CtnClientes
             // 
             this.CtnClientes.AutoSize = true;
             this.CtnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CtnClientes.Location = new System.Drawing.Point(159, 390);
+            this.CtnClientes.Location = new System.Drawing.Point(192, 390);
             this.CtnClientes.Name = "CtnClientes";
             this.CtnClientes.Size = new System.Drawing.Size(86, 25);
             this.CtnClientes.TabIndex = 6;

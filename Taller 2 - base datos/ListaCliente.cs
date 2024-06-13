@@ -64,17 +64,21 @@ namespace Taller_2___base_datos
         {
             string query = "SELECT COUNT(*) FROM cliente WHERE tipo = 1";
 
-            ConnectMySQL.Instance.SelectQuery(query);
+            DataTable data = ConnectMySQL.Instance.SelectQuery(query);
 
-            CtnClientes.TEXT
+            // Tomar la tabla que se obtuvo de la query
 
-            
-            
+            CtnClientes.Text = $"{Convert.ToInt32(data.Rows[0][0])}";
         }
 
         private void ListaTipobox_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
