@@ -39,5 +39,12 @@ namespace Taller_2___base_datos
             ListaCliente listaCliente = new ListaCliente();
             listaCliente.Show();
         }
+
+        private void BtnModificarCliente_Click(object sender, EventArgs e)
+        {
+            ModificarClientecs modificarCliente = new ModificarClientecs();
+            modificarCliente.Show();
+        }
+
     }
 }

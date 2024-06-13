@@ -21,10 +21,12 @@ namespace Taller_2___base_datos
 
         private void ModificarProducto_Load(object sender, EventArgs e)
         {
-
+            //consulta a sql
             string query = "SELECT nombreProducto FROM producto WHERE estado = 0";
 
             DataTable nombres = ConnectMySQL.Instance.SelectQuery(query);
+
+            //agrega el nombre de un producto a la listaProductosBox
             for (int i = 0; i < nombres.Rows.Count; i++)
             {
                 ListaProductos.Items.Add(nombres.Rows[i]["NombreProducto"]);
@@ -51,31 +53,40 @@ namespace Taller_2___base_datos
 
         private void BtnActualizarStock_Click(object sender, EventArgs e)
         {
-            string query = "UPDATE producto SET stockProducto = @stockProducto WHERE nombreProducto = @nomnreProducto";
+            //consulta a sql
+            string query = "UPDATE producto SET stockProducto = @stockProducto WHERE nombreProducto = @nombreProducto";
 
-            
-                MySqlParameter[] parameters =
-                {
-                new MySqlParameter("@stock", int.Parse(StockActualText.Text) + int.Parse(StockNuevoText.Text)),
-                new MySqlParameter("@nombreProducto", ListaProductos.Text)
-                };
+                
+            //que hacer en sql
+            MySqlParameter[] parameters =
+            {
+            new MySqlParameter("@stockProducto", int.Parse(StockActualText.Text) + int.Parse(StockNuevoText.Text)),
+            new MySqlParameter("@nombreProducto", ListaProductos.Text)
+            };
 
-                ConnectMySQL.Instance.ExecuteQuery(query, parameters);
-                     
+            ConnectMySQL.Instance.ExecuteQuery(query, parameters);
+
+            MessageBox.Show("Stock actualizado con exito");
+
         }
 
         private void BtnActualizarPrecio_Click(object sender, EventArgs e)
         {
-            string query = "UPDATE producto SET precioProducto = @precioProducto WHERE nombreProducto = @nomnreProducto";
+            //consulta sql
+            string query = "UPDATE producto SET precioProducto = @precioProducto WHERE nombreProducto = @nombreProducto";
                         
+            //que hacer en sql
             MySqlParameter[] parameters =
             {
-                new MySqlParameter("@precio", PrecioNuevoText.Text),
+                new MySqlParameter("@precioProducto", PrecioNuevoText.Text),
                 new MySqlParameter("@nombreProducto", ListaProductos.Text)
             };
 
             ConnectMySQL.Instance.ExecuteQuery(query,parameters);
-            
+
+
+            MessageBox.Show("Precio actualizado con exito");
+
         }
                        
     }
