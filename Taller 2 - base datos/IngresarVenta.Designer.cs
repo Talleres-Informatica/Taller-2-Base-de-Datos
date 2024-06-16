@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.TituloVentaCliente = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.TextoIngreseProducto = new System.Windows.Forms.Label();
             this.NombreProductoTexto = new System.Windows.Forms.TextBox();
             this.BtnAgregarProducto = new System.Windows.Forms.Button();
@@ -40,30 +39,27 @@
             this.BtnAtenderCliente = new System.Windows.Forms.Button();
             this.BtnFinalizarAtencion = new System.Windows.Forms.Button();
             this.dataGridVentas = new System.Windows.Forms.DataGridView();
+            this.texto1 = new System.Windows.Forms.Label();
+            this.dataGridVentasProductos = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.CantidadVenderTexto = new System.Windows.Forms.TextBox();
+            this.TextoIngreseCantidad = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVentas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVentasProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // TituloVentaCliente
             // 
             this.TituloVentaCliente.AutoSize = true;
             this.TituloVentaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TituloVentaCliente.Location = new System.Drawing.Point(266, 41);
+            this.TituloVentaCliente.Location = new System.Drawing.Point(542, 22);
             this.TituloVentaCliente.Name = "TituloVentaCliente";
             this.TituloVentaCliente.Size = new System.Drawing.Size(203, 26);
             this.TituloVentaCliente.TabIndex = 0;
             this.TituloVentaCliente.Text = "Venta de Productos";
             this.TituloVentaCliente.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.TituloVentaCliente.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 131);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Selecciona el cliente a atender";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // TextoIngreseProducto
             // 
@@ -85,19 +81,21 @@
             // 
             // BtnAgregarProducto
             // 
-            this.BtnAgregarProducto.Location = new System.Drawing.Point(27, 350);
+            this.BtnAgregarProducto.Location = new System.Drawing.Point(27, 419);
             this.BtnAgregarProducto.Name = "BtnAgregarProducto";
             this.BtnAgregarProducto.Size = new System.Drawing.Size(140, 31);
             this.BtnAgregarProducto.TabIndex = 5;
             this.BtnAgregarProducto.Text = "Agregar producto";
             this.BtnAgregarProducto.UseVisualStyleBackColor = true;
+            this.BtnAgregarProducto.Click += new System.EventHandler(this.BtnAgregarProducto_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 51);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(23, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 16);
+            this.label3.Size = new System.Drawing.Size(76, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "Venta N°";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -105,9 +103,10 @@
             // IdVentaTexto
             // 
             this.IdVentaTexto.AutoSize = true;
-            this.IdVentaTexto.Location = new System.Drawing.Point(89, 51);
+            this.IdVentaTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdVentaTexto.Location = new System.Drawing.Point(105, 22);
             this.IdVentaTexto.Name = "IdVentaTexto";
-            this.IdVentaTexto.Size = new System.Drawing.Size(14, 16);
+            this.IdVentaTexto.Size = new System.Drawing.Size(18, 20);
             this.IdVentaTexto.TabIndex = 8;
             this.IdVentaTexto.Text = "0";
             this.IdVentaTexto.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -125,9 +124,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(24, 255);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 16);
+            this.label5.Size = new System.Drawing.Size(153, 18);
             this.label5.TabIndex = 10;
             this.label5.Text = "Agrega tus productos:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -156,19 +156,79 @@
             // dataGridVentas
             // 
             this.dataGridVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridVentas.Location = new System.Drawing.Point(338, 90);
+            this.dataGridVentas.Location = new System.Drawing.Point(337, 119);
             this.dataGridVentas.Name = "dataGridVentas";
             this.dataGridVentas.RowHeadersWidth = 51;
             this.dataGridVentas.RowTemplate.Height = 24;
-            this.dataGridVentas.Size = new System.Drawing.Size(395, 316);
+            this.dataGridVentas.Size = new System.Drawing.Size(285, 343);
             this.dataGridVentas.TabIndex = 14;
             this.dataGridVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridVentas_CellContentClick);
+            // 
+            // texto1
+            // 
+            this.texto1.AutoSize = true;
+            this.texto1.Location = new System.Drawing.Point(24, 119);
+            this.texto1.Name = "texto1";
+            this.texto1.Size = new System.Drawing.Size(191, 16);
+            this.texto1.TabIndex = 15;
+            this.texto1.Text = "Selecciona el cliente a atender";
+            // 
+            // dataGridVentasProductos
+            // 
+            this.dataGridVentasProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridVentasProductos.Location = new System.Drawing.Point(653, 122);
+            this.dataGridVentasProductos.Name = "dataGridVentasProductos";
+            this.dataGridVentasProductos.RowHeadersWidth = 51;
+            this.dataGridVentasProductos.RowTemplate.Height = 24;
+            this.dataGridVentasProductos.Size = new System.Drawing.Size(416, 340);
+            this.dataGridVentasProductos.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(409, 89);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 16);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Ventas a Clientes";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(774, 89);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(132, 16);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Ventas de Productos";
+            // 
+            // CantidadVenderTexto
+            // 
+            this.CantidadVenderTexto.Location = new System.Drawing.Point(27, 382);
+            this.CantidadVenderTexto.Name = "CantidadVenderTexto";
+            this.CantidadVenderTexto.Size = new System.Drawing.Size(76, 22);
+            this.CantidadVenderTexto.TabIndex = 19;
+            // 
+            // TextoIngreseCantidad
+            // 
+            this.TextoIngreseCantidad.AutoSize = true;
+            this.TextoIngreseCantidad.Location = new System.Drawing.Point(24, 363);
+            this.TextoIngreseCantidad.Name = "TextoIngreseCantidad";
+            this.TextoIngreseCantidad.Size = new System.Drawing.Size(121, 16);
+            this.TextoIngreseCantidad.TabIndex = 20;
+            this.TextoIngreseCantidad.Text = "Ingrese la cantidad";
+            this.TextoIngreseCantidad.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // IngresarVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1101, 485);
+            this.Controls.Add(this.TextoIngreseCantidad);
+            this.Controls.Add(this.CantidadVenderTexto);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dataGridVentasProductos);
+            this.Controls.Add(this.texto1);
             this.Controls.Add(this.dataGridVentas);
             this.Controls.Add(this.BtnFinalizarAtencion);
             this.Controls.Add(this.BtnAtenderCliente);
@@ -179,11 +239,11 @@
             this.Controls.Add(this.BtnAgregarProducto);
             this.Controls.Add(this.TextoIngreseProducto);
             this.Controls.Add(this.NombreProductoTexto);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.TituloVentaCliente);
             this.Name = "IngresarVenta";
             this.Text = "IngresarVenta";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVentas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVentasProductos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,7 +252,6 @@
         #endregion
 
         private System.Windows.Forms.Label TituloVentaCliente;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label TextoIngreseProducto;
         private System.Windows.Forms.TextBox NombreProductoTexto;
         private System.Windows.Forms.Button BtnAgregarProducto;
@@ -203,5 +262,11 @@
         private System.Windows.Forms.Button BtnAtenderCliente;
         private System.Windows.Forms.Button BtnFinalizarAtencion;
         private System.Windows.Forms.DataGridView dataGridVentas;
+        private System.Windows.Forms.Label texto1;
+        private System.Windows.Forms.DataGridView dataGridVentasProductos;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox CantidadVenderTexto;
+        private System.Windows.Forms.Label TextoIngreseCantidad;
     }
 }

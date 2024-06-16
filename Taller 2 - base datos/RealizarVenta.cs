@@ -30,5 +30,10 @@ namespace Taller_2___base_datos
             //RealizarVenta realizarVenta = new RealizarVenta();  
             //realizarVenta.Show();
         }
+
+        private void RealizarVenta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

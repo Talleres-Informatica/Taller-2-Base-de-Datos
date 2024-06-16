@@ -24,14 +24,26 @@ namespace Taller_2___base_datos
             SetIdVentaActual();
             NombreProductoTexto.Enabled = false;
             TextoIngreseProducto.Enabled = false;
+            TextoIngreseCantidad.Enabled = false;
+
+            CantidadVenderTexto.Enabled = false;
+
             BtnAgregarProducto.Enabled = false;
             BtnAtenderCliente.Enabled = false;
+            ListaClientesNombres.Enabled = true;
 
             // DataGrid de Ventas
 
             string query = "SELECT v.idVenta, v.idCliente FROM venta v";
             DataTable data = ConnectMySQL.Instance.SelectQuery(query);
             dataGridVentas.DataSource = data;
+
+            string query2 = "SELECT dv.idVenta, dv.idProducto, dv.cantidadProducto FROM detalleventa dv";
+            DataTable data2 = ConnectMySQL.Instance.SelectQuery(query2);
+            dataGridVentasProductos.DataSource = data2;
+
+            IdVentaTexto.Enabled = false;
+
         }
 
         // ignorar
@@ -51,11 +63,24 @@ namespace Taller_2___base_datos
             
             BtnAtenderCliente.Enabled = false;
 
+            ListaClientesNombres.Enabled = false;
+
             NombreProductoTexto.Enabled = true;
+
             TextoIngreseProducto.Enabled = true;
+            TextoIngreseCantidad.Enabled = true;
+
+            CantidadVenderTexto.Enabled = true;
 
             BtnFinalizarAtencion.Enabled = true;
             BtnAgregarProducto.Enabled = true;
+
+            IdVentaTexto.Enabled = true;
+
+            string query = "SELECT MAX(v.idVenta)+1 FROM venta v";
+            string resultado = ConnectMySQL.Instance.SelectQueryScalar(query);
+
+            IdVentaTexto.Text = resultado;
 
         }
 
@@ -89,22 +114,10 @@ namespace Taller_2___base_datos
         }
 
 
-        // Input de Producto para invocar AgregarProductoVentaActual( nombreProducto )
+       
+        //ignorar
         private void NombreProductoTexto_TextChanged(object sender, EventArgs e)
         {
-            string nombreProducto = NombreProductoTexto.Text;
-
-            if (!string.IsNullOrWhiteSpace(nombreProducto))
-            {
-                if (ListaClientesNombres.SelectedItem != null)
-                {
-                    AgregarProductoVentaActual(nombreProducto);
-                }
-                else
-                {
-                    MessageBox.Show("Seleccione un cliente antes de agregar productos.");
-                }
-            }
         }
 
 
@@ -117,6 +130,8 @@ namespace Taller_2___base_datos
                 MessageBox.Show("Seleccione un cliente antes de agregar productos.");
                 return;
             }
+
+
 
             // Obtener IdCliente
             string queryCliente = "SELECT c.id FROM cliente c " +
@@ -147,17 +162,22 @@ namespace Taller_2___base_datos
 
 
 
-            // obtener IdProducto
-            string queryProducto = "SELECT p.idProducto FROM producto p " +
-                "WHERE nombreProducto = @nombreProducto";
+            // obtener IdProducto y stockProducto
+
+            string queryProducto = "SELECT p.idProducto, p.stockProducto FROM producto p " +
+                "WHERE p.nombreProducto = @nombreProducto";
 
             string IdProducto;
+            int stockProducto;
+
+
             try
             {
                 DataTable productData = ConnectMySQL.Instance.SelectQuery(queryProducto, "@nombreProducto", nombreProducto);
                 if (productData.Rows.Count > 0)
                 {
                     IdProducto = productData.Rows[0]["idProducto"].ToString();
+                    stockProducto = Convert.ToInt32(productData.Rows[0]["stockProducto"]);
                 }
                 else
                 {
@@ -168,6 +188,37 @@ namespace Taller_2___base_datos
             catch (Exception ex)
             {
                 MessageBox.Show("Error al obtener el ID del producto: " + ex.Message);
+                return;
+            }
+
+
+            // Verificar si hay stock del producto
+            int cantidadVender;
+            if (!int.TryParse(CantidadVenderTexto.Text, out cantidadVender) || cantidadVender <= 0)
+            {
+                MessageBox.Show("Ingrese una cantidad válida para vender.");
+                return;
+            }
+
+            if (cantidadVender > stockProducto)
+            {
+                MessageBox.Show("No hay suficiente stock para este producto");
+                return;
+
+            }
+
+
+            // Actualizar el stock del producto
+            string actualizarStockQuery = "UPDATE producto SET stockProducto = stockProducto - @cantidadVender WHERE idProducto = @idProducto";
+            try
+            {
+                ConnectMySQL.Instance.ExecuteQuery(actualizarStockQuery,
+                    new MySqlParameter("@cantidadVender", cantidadVender),
+                    new MySqlParameter("@idProducto", IdProducto));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar el stock del producto: " + ex.Message);
                 return;
             }
 
@@ -187,12 +238,13 @@ namespace Taller_2___base_datos
             }
 
             // Insertar en la tabla detalleventa
-            string detalleVentaQuery = "INSERT INTO detalleventa (idVenta, idProducto, cantidadProducto) VALUES (@idVenta, @idProducto, 1)";
+            string detalleVentaQuery = "INSERT INTO detalleventa (idVenta, idProducto, cantidadProducto) VALUES (@idVenta, @idProducto, @cantidadProducto)";
             try
             {
                 ConnectMySQL.Instance.ExecuteQuery(detalleVentaQuery,
                     new MySqlParameter("@idVenta", IdVentaActual),
-                    new MySqlParameter("@idProducto", IdProducto));
+                    new MySqlParameter("@idProducto", IdProducto),
+                    new MySqlParameter("@cantidadProducto", cantidadVender) );
             }
             catch (Exception ex)
             {
@@ -255,6 +307,24 @@ namespace Taller_2___base_datos
         private void dataGridVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        private void BtnAgregarProducto_Click(object sender, EventArgs e)
+        {
+            // Input de Producto para invocar AgregarProductoVentaActual( nombreProducto )
+            string nombreProducto = NombreProductoTexto.Text;
+
+            if (!string.IsNullOrWhiteSpace(nombreProducto))
+            {
+                if (ListaClientesNombres.SelectedItem != null)
+                {
+                    AgregarProductoVentaActual(nombreProducto);
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un cliente antes de agregar productos.");
+                }
+            }
         }
     }
 }

@@ -42,7 +42,7 @@
             // 
             this.listaClientetext.AutoSize = true;
             this.listaClientetext.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listaClientetext.Location = new System.Drawing.Point(318, 37);
+            this.listaClientetext.Location = new System.Drawing.Point(312, 9);
             this.listaClientetext.Name = "listaClientetext";
             this.listaClientetext.Size = new System.Drawing.Size(138, 26);
             this.listaClientetext.TabIndex = 0;
@@ -52,17 +52,17 @@
             // 
             this.dataListaCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataListaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListaCliente.Location = new System.Drawing.Point(277, 118);
+            this.dataListaCliente.Location = new System.Drawing.Point(34, 84);
             this.dataListaCliente.Name = "dataListaCliente";
             this.dataListaCliente.RowHeadersWidth = 51;
             this.dataListaCliente.RowTemplate.Height = 24;
-            this.dataListaCliente.Size = new System.Drawing.Size(417, 207);
+            this.dataListaCliente.Size = new System.Drawing.Size(716, 407);
             this.dataListaCliente.TabIndex = 2;
             this.dataListaCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // BtnVerListaCliente
             // 
-            this.BtnVerListaCliente.Location = new System.Drawing.Point(57, 263);
+            this.BtnVerListaCliente.Location = new System.Drawing.Point(225, 55);
             this.BtnVerListaCliente.Name = "BtnVerListaCliente";
             this.BtnVerListaCliente.Size = new System.Drawing.Size(75, 23);
             this.BtnVerListaCliente.TabIndex = 4;
@@ -74,7 +74,7 @@
             // 
             this.CtnClientes.AutoSize = true;
             this.CtnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CtnClientes.Location = new System.Drawing.Point(192, 390);
+            this.CtnClientes.Location = new System.Drawing.Point(608, 50);
             this.CtnClientes.Name = "CtnClientes";
             this.CtnClientes.Size = new System.Drawing.Size(86, 25);
             this.CtnClientes.TabIndex = 6;
@@ -85,7 +85,7 @@
             // 
             this.Tipotext.AutoSize = true;
             this.Tipotext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tipotext.Location = new System.Drawing.Point(52, 163);
+            this.Tipotext.Location = new System.Drawing.Point(29, 50);
             this.Tipotext.Name = "Tipotext";
             this.Tipotext.Size = new System.Drawing.Size(51, 25);
             this.Tipotext.TabIndex = 7;
@@ -95,7 +95,7 @@
             // 
             this.ClientePremium.AutoSize = true;
             this.ClientePremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClientePremium.Location = new System.Drawing.Point(23, 390);
+            this.ClientePremium.Location = new System.Drawing.Point(431, 50);
             this.ClientePremium.Name = "ClientePremium";
             this.ClientePremium.Size = new System.Drawing.Size(171, 25);
             this.ClientePremium.TabIndex = 8;
@@ -108,7 +108,7 @@
             "Normal",
             "Premium",
             "Todos"});
-            this.ListaTipobox.Location = new System.Drawing.Point(28, 216);
+            this.ListaTipobox.Location = new System.Drawing.Point(86, 54);
             this.ListaTipobox.Name = "ListaTipobox";
             this.ListaTipobox.Size = new System.Drawing.Size(121, 24);
             this.ListaTipobox.TabIndex = 9;
@@ -117,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 517);
             this.Controls.Add(this.ListaTipobox);
             this.Controls.Add(this.ClientePremium);
             this.Controls.Add(this.Tipotext);

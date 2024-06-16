@@ -39,7 +39,7 @@
             // 
             this.ListaVentaText.AutoSize = true;
             this.ListaVentaText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ListaVentaText.Location = new System.Drawing.Point(582, 170);
+            this.ListaVentaText.Location = new System.Drawing.Point(442, 170);
             this.ListaVentaText.Name = "ListaVentaText";
             this.ListaVentaText.Size = new System.Drawing.Size(120, 25);
             this.ListaVentaText.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             this.RealizarVentaText.AutoSize = true;
             this.RealizarVentaText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RealizarVentaText.Location = new System.Drawing.Point(64, 170);
+            this.RealizarVentaText.Location = new System.Drawing.Point(201, 171);
             this.RealizarVentaText.Name = "RealizarVentaText";
             this.RealizarVentaText.Size = new System.Drawing.Size(139, 25);
             this.RealizarVentaText.TabIndex = 1;
@@ -57,9 +57,9 @@
             // 
             // BtnRealizarVenta
             // 
-            this.BtnRealizarVenta.Location = new System.Drawing.Point(93, 218);
+            this.BtnRealizarVenta.Location = new System.Drawing.Point(208, 215);
             this.BtnRealizarVenta.Name = "BtnRealizarVenta";
-            this.BtnRealizarVenta.Size = new System.Drawing.Size(75, 23);
+            this.BtnRealizarVenta.Size = new System.Drawing.Size(120, 53);
             this.BtnRealizarVenta.TabIndex = 2;
             this.BtnRealizarVenta.Text = "Ver";
             this.BtnRealizarVenta.UseVisualStyleBackColor = true;
@@ -67,9 +67,9 @@
             // 
             // BtnListaVenta
             // 
-            this.BtnListaVenta.Location = new System.Drawing.Point(604, 219);
+            this.BtnListaVenta.Location = new System.Drawing.Point(442, 215);
             this.BtnListaVenta.Name = "BtnListaVenta";
-            this.BtnListaVenta.Size = new System.Drawing.Size(75, 23);
+            this.BtnListaVenta.Size = new System.Drawing.Size(120, 53);
             this.BtnListaVenta.TabIndex = 3;
             this.BtnListaVenta.Text = "Ver";
             this.BtnListaVenta.UseVisualStyleBackColor = true;
@@ -79,17 +79,17 @@
             // 
             this.MenuVenta.AutoSize = true;
             this.MenuVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MenuVenta.Location = new System.Drawing.Point(329, 57);
+            this.MenuVenta.Location = new System.Drawing.Point(297, 43);
             this.MenuVenta.Name = "MenuVenta";
-            this.MenuVenta.Size = new System.Drawing.Size(129, 26);
+            this.MenuVenta.Size = new System.Drawing.Size(170, 26);
             this.MenuVenta.TabIndex = 4;
-            this.MenuVenta.Text = "Menu Venta";
+            this.MenuVenta.Text = "Menu de Ventas";
             // 
             // RealizarVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 365);
             this.Controls.Add(this.MenuVenta);
             this.Controls.Add(this.BtnListaVenta);
             this.Controls.Add(this.BtnRealizarVenta);
@@ -97,6 +97,7 @@
             this.Controls.Add(this.ListaVentaText);
             this.Name = "RealizarVenta";
             this.Text = "RealizarVenta";
+            this.Load += new System.EventHandler(this.RealizarVenta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
