@@ -28,38 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.ListaTipobox = new System.Windows.Forms.ComboBox();
+            this.listaClientetext = new System.Windows.Forms.Label();
             this.dataListaCliente = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
             this.BtnVerListaCliente = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.CtnClientes = new System.Windows.Forms.Label();
+            this.Tipotext = new System.Windows.Forms.Label();
+            this.ClientePremium = new System.Windows.Forms.Label();
+            this.ListaTipobox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataListaCliente)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // listaClientetext
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(318, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Lista clientes";
-            // 
-            // ListaTipobox
-            // 
-            this.ListaTipobox.FormattingEnabled = true;
-            this.ListaTipobox.Items.AddRange(new object[] {
-            "Normal",
-            "Premium",
-            "Todos"});
-            this.ListaTipobox.Location = new System.Drawing.Point(28, 191);
-            this.ListaTipobox.Name = "ListaTipobox";
-            this.ListaTipobox.Size = new System.Drawing.Size(121, 24);
-            this.ListaTipobox.TabIndex = 1;
-            this.ListaTipobox.SelectedIndexChanged += new System.EventHandler(this.ListaTipobox_SelectedIndexChanged);
+            this.listaClientetext.AutoSize = true;
+            this.listaClientetext.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listaClientetext.Location = new System.Drawing.Point(318, 37);
+            this.listaClientetext.Name = "listaClientetext";
+            this.listaClientetext.Size = new System.Drawing.Size(138, 26);
+            this.listaClientetext.TabIndex = 0;
+            this.listaClientetext.Text = "Lista clientes";
             // 
             // dataListaCliente
             // 
@@ -73,16 +60,6 @@
             this.dataListaCliente.TabIndex = 2;
             this.dataListaCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 147);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 25);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Tipo";
-            // 
             // BtnVerListaCliente
             // 
             this.BtnVerListaCliente.Location = new System.Drawing.Point(57, 263);
@@ -92,17 +69,6 @@
             this.BtnVerListaCliente.Text = "Ver";
             this.BtnVerListaCliente.UseVisualStyleBackColor = true;
             this.BtnVerListaCliente.Click += new System.EventHandler(this.BtnVerListaCliente_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 390);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(171, 25);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Clientes Premium:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // CtnClientes
             // 
@@ -115,18 +81,50 @@
             this.CtnClientes.Text = "cantidad";
             this.CtnClientes.Click += new System.EventHandler(this.CtnClientes_Click);
             // 
+            // Tipotext
+            // 
+            this.Tipotext.AutoSize = true;
+            this.Tipotext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tipotext.Location = new System.Drawing.Point(52, 163);
+            this.Tipotext.Name = "Tipotext";
+            this.Tipotext.Size = new System.Drawing.Size(51, 25);
+            this.Tipotext.TabIndex = 7;
+            this.Tipotext.Text = "Tipo";
+            // 
+            // ClientePremium
+            // 
+            this.ClientePremium.AutoSize = true;
+            this.ClientePremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClientePremium.Location = new System.Drawing.Point(23, 390);
+            this.ClientePremium.Name = "ClientePremium";
+            this.ClientePremium.Size = new System.Drawing.Size(171, 25);
+            this.ClientePremium.TabIndex = 8;
+            this.ClientePremium.Text = "Clientes Premium:";
+            // 
+            // ListaTipobox
+            // 
+            this.ListaTipobox.FormattingEnabled = true;
+            this.ListaTipobox.Items.AddRange(new object[] {
+            "Normal",
+            "Premium",
+            "Todos"});
+            this.ListaTipobox.Location = new System.Drawing.Point(28, 216);
+            this.ListaTipobox.Name = "ListaTipobox";
+            this.ListaTipobox.Size = new System.Drawing.Size(121, 24);
+            this.ListaTipobox.TabIndex = 9;
+            // 
             // ListaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.CtnClientes);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.BtnVerListaCliente);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataListaCliente);
             this.Controls.Add(this.ListaTipobox);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ClientePremium);
+            this.Controls.Add(this.Tipotext);
+            this.Controls.Add(this.CtnClientes);
+            this.Controls.Add(this.BtnVerListaCliente);
+            this.Controls.Add(this.dataListaCliente);
+            this.Controls.Add(this.listaClientetext);
             this.Name = "ListaCliente";
             this.Text = "ListaCliente";
             this.Load += new System.EventHandler(this.ListaCliente_Load);
@@ -138,12 +136,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox ListaTipobox;
+        private System.Windows.Forms.Label listaClientetext;
         private System.Windows.Forms.DataGridView dataListaCliente;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnVerListaCliente;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label CtnClientes;
+        private System.Windows.Forms.Label Tipotext;
+        private System.Windows.Forms.Label ClientePremium;
+        private System.Windows.Forms.ComboBox ListaTipobox;
     }
 }

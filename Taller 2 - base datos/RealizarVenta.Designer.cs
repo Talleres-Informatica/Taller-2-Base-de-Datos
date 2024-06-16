@@ -63,6 +63,7 @@
             this.BtnRealizarVenta.TabIndex = 2;
             this.BtnRealizarVenta.Text = "Ver";
             this.BtnRealizarVenta.UseVisualStyleBackColor = true;
+            this.BtnRealizarVenta.Click += new System.EventHandler(this.BtnRealizarVenta_Click);
             // 
             // BtnListaVenta
             // 

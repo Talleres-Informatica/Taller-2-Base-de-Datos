@@ -26,7 +26,7 @@ namespace Taller_2___base_datos
 
             DataTable nombres = ConnectMySQL.Instance.SelectQuery(query);
 
-            //agrega el nombre de un producto a la listaProductosBox
+            //agrega el nombre de un producto a la listaCliente
             for (int i = 0; i < nombres.Rows.Count; i++)
             {
                 ListaCliente.Items.Add(nombres.Rows[i]["Nombre"]);

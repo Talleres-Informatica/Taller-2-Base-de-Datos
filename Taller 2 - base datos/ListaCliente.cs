@@ -21,7 +21,7 @@ namespace Taller_2___base_datos
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
         private void BtnVerListaCliente_Click(object sender, EventArgs e)
@@ -57,28 +57,18 @@ namespace Taller_2___base_datos
 
         private void CtnClientes_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void ListaCliente_Load(object sender, EventArgs e)
         {
-            string query = "SELECT COUNT(*) FROM cliente WHERE tipo = 1";
+            string query = "SELECT COUNT(*) FROM cliente WHERE tipo = 2";
 
-            DataTable data = ConnectMySQL.Instance.SelectQuery(query);
+            string text = ConnectMySQL.Instance.SelectQueryScalar(query);
 
-            // Tomar la tabla que se obtuvo de la query
-
-            CtnClientes.Text = $"{Convert.ToInt32(data.Rows[0][0])}";
+            //muestra la query en el formulario
+            CtnClientes.Text = text;
         }
-
-        private void ListaTipobox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
+    
     }
 }

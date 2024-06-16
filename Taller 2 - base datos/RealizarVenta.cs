@@ -19,7 +19,14 @@ namespace Taller_2___base_datos
 
         private void BtnListaVenta_Click(object sender, EventArgs e)
         {
+            ListaVenta listaVenta = new ListaVenta();
+            listaVenta.Show();
+        }
 
+        private void BtnRealizarVenta_Click(object sender, EventArgs e)
+        {
+            RealizarVenta realizarVenta = new RealizarVenta();  
+            realizarVenta.Show();
         }
     }
 }

@@ -30,7 +30,6 @@
         {
             this.dataLista = new System.Windows.Forms.DataGridView();
             this.ListaProductoText = new System.Windows.Forms.Label();
-            this.BtnEliminarListaProducto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataLista)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,22 +54,11 @@
             this.ListaProductoText.TabIndex = 1;
             this.ListaProductoText.Text = "Lista Productos";
             // 
-            // BtnEliminarListaProducto
-            // 
-            this.BtnEliminarListaProducto.Location = new System.Drawing.Point(346, 328);
-            this.BtnEliminarListaProducto.Name = "BtnEliminarListaProducto";
-            this.BtnEliminarListaProducto.Size = new System.Drawing.Size(75, 23);
-            this.BtnEliminarListaProducto.TabIndex = 2;
-            this.BtnEliminarListaProducto.Text = "Eliminar";
-            this.BtnEliminarListaProducto.UseVisualStyleBackColor = true;
-            this.BtnEliminarListaProducto.Click += new System.EventHandler(this.BtnEliminarListaProducto_Click);
-            // 
             // ListaProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.BtnEliminarListaProducto);
             this.Controls.Add(this.ListaProductoText);
             this.Controls.Add(this.dataLista);
             this.Name = "ListaProducto";
@@ -86,6 +74,5 @@
 
         private System.Windows.Forms.DataGridView dataLista;
         private System.Windows.Forms.Label ListaProductoText;
-        private System.Windows.Forms.Button BtnEliminarListaProducto;
     }
 }
