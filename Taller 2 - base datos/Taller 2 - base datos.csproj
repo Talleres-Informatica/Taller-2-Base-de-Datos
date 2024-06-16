@@ -210,6 +210,9 @@
     <EmbeddedResource Include="IngresarUsuario.resx">
       <DependentUpon>IngresarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IngresarVenta.resx">
+      <DependentUpon>IngresarVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListaCliente.resx">
       <DependentUpon>ListaCliente.cs</DependentUpon>
     </EmbeddedResource>

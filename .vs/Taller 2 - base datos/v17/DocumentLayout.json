@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|c:\\users\\pamev\\desktop\\talleresbd\\taller 2 - base datos\\taller 2 - base datos\\ventascliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\ventascliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|c:\\users\\pamev\\desktop\\talleresbd\\taller 2 - base datos\\taller 2 - base datos\\ingresarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\ingresarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\taller 2 - base datos\\ventascliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\ventascliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|c:\\users\\pamev\\desktop\\talleresbd\\taller 2 - base datos\\taller 2 - base datos\\listacliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\listacliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\taller 2 - base datos\\ingresarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\ingresarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|c:\\users\\pamev\\desktop\\talleresbd\\taller 2 - base datos\\taller 2 - base datos\\listacliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\listacliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|c:\\users\\pamev\\desktop\\talleresbd\\taller 2 - base datos\\taller 2 - base datos\\ventascliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\ventascliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|c:\\users\\pamev\\desktop\\talleresbd\\taller 2 - base datos\\taller 2 - base datos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\taller 2 - base datos\\ventascliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B5D197D5-A114-4031-92AC-E9F74B931604}|Taller 2 - base datos\\Taller 2 - base datos.csproj|solutionrelative:taller 2 - base datos\\ventascliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +43,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VentasCliente.cs",
-              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\VentasCliente.cs",
-              "RelativeDocumentMoniker": "Taller 2 - base datos\\VentasCliente.cs",
-              "ToolTip": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\VentasCliente.cs",
-              "RelativeToolTip": "Taller 2 - base datos\\VentasCliente.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAA+wCYAAAAOAAAA",
+              "Title": "IngresarVenta.cs",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\IngresarVenta.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\IngresarVenta.cs",
+              "ToolTip": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\IngresarVenta.cs",
+              "RelativeToolTip": "Taller 2 - base datos\\IngresarVenta.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T18:07:30.914Z",
+              "WhenOpened": "2024-06-16T18:52:11.226Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VentasCliente.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\VentasCliente.cs",
-              "RelativeDocumentMoniker": "Taller 2 - base datos\\VentasCliente.cs",
-              "ToolTip": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\VentasCliente.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Taller 2 - base datos\\VentasCliente.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T17:58:48.565Z",
-              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -59,6 +63,68 @@
               "RelativeToolTip": "Taller 2 - base datos\\IngresarVenta.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-16T17:57:46.832Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ListaCliente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\ListaCliente.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\ListaCliente.cs",
+              "ToolTip": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\ListaCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Taller 2 - base datos\\ListaCliente.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T19:21:49.421Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListaCliente.cs",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\ListaCliente.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\ListaCliente.cs",
+              "ToolTip": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\ListaCliente.cs",
+              "RelativeToolTip": "Taller 2 - base datos\\ListaCliente.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAvwCgAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T19:22:13.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VentasCliente.cs",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\VentasCliente.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\VentasCliente.cs",
+              "ToolTip": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\VentasCliente.cs",
+              "RelativeToolTip": "Taller 2 - base datos\\VentasCliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:07:30.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VentasCliente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\VentasCliente.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\VentasCliente.cs",
+              "ToolTip": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\VentasCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Taller 2 - base datos\\VentasCliente.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T17:58:48.565Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\Form1.cs",
+              "RelativeDocumentMoniker": "Taller 2 - base datos\\Form1.cs",
+              "ToolTip": "C:\\Users\\pamev\\Desktop\\TalleresBD\\Taller 2 - base datos\\Taller 2 - base datos\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Taller 2 - base datos\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T19:03:56.202Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

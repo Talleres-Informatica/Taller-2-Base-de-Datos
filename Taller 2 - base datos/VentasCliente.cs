@@ -31,11 +31,11 @@ namespace Taller_2___base_datos
             DateTime fecha = fechaBuscar.Value;
 
             string query = "SELECT ";
-
+            /*
             SELECT v.idVenta, v.idCliente,
             FROM cliente c, venta v
             WHERE 
-
+            */
             /*
             string query = "INSERT INTO venta ( idCliente, fecha) VALUES (@idCliente, @fecha)";
                         

@@ -25,8 +25,10 @@ namespace Taller_2___base_datos
 
         private void BtnRealizarVenta_Click(object sender, EventArgs e)
         {
-            RealizarVenta realizarVenta = new RealizarVenta();  
-            realizarVenta.Show();
+            IngresarVenta ingresarVenta = new IngresarVenta();
+            ingresarVenta.Show();
+            //RealizarVenta realizarVenta = new RealizarVenta();  
+            //realizarVenta.Show();
         }
     }
 }
