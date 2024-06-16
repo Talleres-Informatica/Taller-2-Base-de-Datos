@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,22 +21,34 @@ namespace Taller_2___base_datos
 
         private void VentasCliente_Load(object sender, EventArgs e)
         {
-            //consulta a sql
-            string query = "SELECT nombre FROM cliente WHERE estado = 0";
-
-            DataTable nombres = ConnectMySQL.Instance.SelectQuery(query);
-
-            //agrega el nombre de un producto a la listaCliente
-            for (int i = 0; i < nombres.Rows.Count; i++)
-            {
-                ListaCliente.Items.Add(nombres.Rows[i]["Nombre"]);
-            }
-
-            ConnectMySQL.Instance.CloseConnection();
+           
         }
 
         private void BtnVerVenta_Click(object sender, EventArgs e)
         {
+            //asigna el nombre ingresado por pantalla
+            string nombre = NombreBuscar.Text;
+            DateTime fecha = fechaBuscar.Value;
+
+            string query = "SELECT ";
+
+            SELECT v.idVenta, v.idCliente,
+            FROM cliente c, venta v
+            WHERE 
+
+            /*
+            string query = "INSERT INTO venta ( idCliente, fecha) VALUES (@idCliente, @fecha)";
+                        
+            MySqlParameter[] parameters =
+                {
+                new MySqlParameter("@idVenta", ListaCliente.Text),
+                new MySqlParameter("@idCliente", id),
+                new MySqlParameter("@fecha", fechaBuscar)
+            };
+            ConnectMySQL.Instance.ExecuteQuery(query, parameters);
+            MessageBox.Show("Cliente normal ingresado con exito");
+            //TODO: HACER ERROR
+            */
 
         }
 

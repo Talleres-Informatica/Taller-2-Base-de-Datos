@@ -31,10 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ClienteText = new System.Windows.Forms.Label();
             this.FechaTezt = new System.Windows.Forms.Label();
-            this.ListaCliente = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.fechaBuscar = new System.Windows.Forms.DateTimePicker();
             this.BtnVerVenta = new System.Windows.Forms.Button();
+            this.NombreBuscar = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,14 +66,6 @@
             this.FechaTezt.TabIndex = 2;
             this.FechaTezt.Text = "Fecha";
             // 
-            // ListaCliente
-            // 
-            this.ListaCliente.FormattingEnabled = true;
-            this.ListaCliente.Location = new System.Drawing.Point(12, 175);
-            this.ListaCliente.Name = "ListaCliente";
-            this.ListaCliente.Size = new System.Drawing.Size(121, 24);
-            this.ListaCliente.TabIndex = 3;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -102,15 +94,22 @@
             this.BtnVerVenta.UseVisualStyleBackColor = true;
             this.BtnVerVenta.Click += new System.EventHandler(this.BtnVerVenta_Click);
             // 
+            // NombreBuscar
+            // 
+            this.NombreBuscar.Location = new System.Drawing.Point(15, 175);
+            this.NombreBuscar.Name = "NombreBuscar";
+            this.NombreBuscar.Size = new System.Drawing.Size(121, 22);
+            this.NombreBuscar.TabIndex = 7;
+            // 
             // VentasCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.NombreBuscar);
             this.Controls.Add(this.BtnVerVenta);
             this.Controls.Add(this.fechaBuscar);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.ListaCliente);
             this.Controls.Add(this.FechaTezt);
             this.Controls.Add(this.ClienteText);
             this.Controls.Add(this.label1);
@@ -128,9 +127,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label ClienteText;
         private System.Windows.Forms.Label FechaTezt;
-        private System.Windows.Forms.ComboBox ListaCliente;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DateTimePicker fechaBuscar;
         private System.Windows.Forms.Button BtnVerVenta;
+        private System.Windows.Forms.TextBox NombreBuscar;
     }
 }
