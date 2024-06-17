@@ -130,10 +130,12 @@ namespace Taller2
 
                 using (MySqlCommand cmd = new MySqlCommand(query, connection))
                 {
+                    
                     for (int pos = 0; pos < values.Length; pos += 2)
                     {
                         cmd.Parameters.AddWithValue(values[pos], values[pos + 1]);
                     }
+                    
 
                     using (MySqlDataReader reader = cmd.ExecuteReader())
                     {

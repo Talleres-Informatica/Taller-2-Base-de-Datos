@@ -194,6 +194,7 @@ namespace Taller_2___base_datos
 
             // Verificar si hay stock del producto
             int cantidadVender;
+
             if (!int.TryParse(CantidadVenderTexto.Text, out cantidadVender) || cantidadVender <= 0)
             {
                 MessageBox.Show("Ingrese una cantidad válida para vender.");

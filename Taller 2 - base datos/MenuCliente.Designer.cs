@@ -28,62 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.IngresarText = new System.Windows.Forms.Label();
-            this.btnVerInUsuario = new System.Windows.Forms.Button();
-            this.EliminarText = new System.Windows.Forms.Label();
-            this.btnVerElimCliente = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuCliente));
             this.label1 = new System.Windows.Forms.Label();
             this.ListaClientetext = new System.Windows.Forms.Label();
             this.BtnListaCliente = new System.Windows.Forms.Button();
-            this.BtnModificarCliente = new System.Windows.Forms.Button();
-            this.ModificarCliente = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // IngresarText
-            // 
-            this.IngresarText.AutoSize = true;
-            this.IngresarText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IngresarText.Location = new System.Drawing.Point(43, 140);
-            this.IngresarText.Name = "IngresarText";
-            this.IngresarText.Size = new System.Drawing.Size(149, 25);
-            this.IngresarText.TabIndex = 0;
-            this.IngresarText.Text = "Ingresar Cliente";
-            // 
-            // btnVerInUsuario
-            // 
-            this.btnVerInUsuario.Location = new System.Drawing.Point(77, 190);
-            this.btnVerInUsuario.Name = "btnVerInUsuario";
-            this.btnVerInUsuario.Size = new System.Drawing.Size(75, 23);
-            this.btnVerInUsuario.TabIndex = 1;
-            this.btnVerInUsuario.Text = "Ver";
-            this.btnVerInUsuario.UseVisualStyleBackColor = true;
-            this.btnVerInUsuario.Click += new System.EventHandler(this.btnVerInUsuario_Click);
-            // 
-            // EliminarText
-            // 
-            this.EliminarText.AutoSize = true;
-            this.EliminarText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EliminarText.Location = new System.Drawing.Point(355, 140);
-            this.EliminarText.Name = "EliminarText";
-            this.EliminarText.Size = new System.Drawing.Size(147, 25);
-            this.EliminarText.TabIndex = 2;
-            this.EliminarText.Text = "Eliminar Cliente";
-            // 
-            // btnVerElimCliente
-            // 
-            this.btnVerElimCliente.Location = new System.Drawing.Point(380, 190);
-            this.btnVerElimCliente.Name = "btnVerElimCliente";
-            this.btnVerElimCliente.Size = new System.Drawing.Size(75, 23);
-            this.btnVerElimCliente.TabIndex = 3;
-            this.btnVerElimCliente.Text = "Ver";
-            this.btnVerElimCliente.UseVisualStyleBackColor = true;
-            this.btnVerElimCliente.Click += new System.EventHandler(this.btnVerElimCliente_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(301, 52);
+            this.label1.Location = new System.Drawing.Point(303, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 26);
             this.label1.TabIndex = 4;
@@ -94,73 +51,54 @@
             // 
             this.ListaClientetext.AutoSize = true;
             this.ListaClientetext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ListaClientetext.Location = new System.Drawing.Point(173, 298);
+            this.ListaClientetext.Location = new System.Drawing.Point(303, 218);
             this.ListaClientetext.Name = "ListaClientetext";
-            this.ListaClientetext.Size = new System.Drawing.Size(119, 25);
+            this.ListaClientetext.Size = new System.Drawing.Size(156, 25);
             this.ListaClientetext.TabIndex = 5;
-            this.ListaClientetext.Text = "Lista Cliente";
+            this.ListaClientetext.Text = "Lista de Clientes";
             // 
             // BtnListaCliente
             // 
-            this.BtnListaCliente.Location = new System.Drawing.Point(190, 348);
+            this.BtnListaCliente.Location = new System.Drawing.Point(308, 256);
             this.BtnListaCliente.Name = "BtnListaCliente";
-            this.BtnListaCliente.Size = new System.Drawing.Size(75, 23);
+            this.BtnListaCliente.Size = new System.Drawing.Size(135, 53);
             this.BtnListaCliente.TabIndex = 6;
             this.BtnListaCliente.Text = "Ver";
             this.BtnListaCliente.UseVisualStyleBackColor = true;
             this.BtnListaCliente.Click += new System.EventHandler(this.BtnListaCliente_Click);
             // 
-            // BtnModificarCliente
+            // pictureBox2
             // 
-            this.BtnModificarCliente.Location = new System.Drawing.Point(550, 348);
-            this.BtnModificarCliente.Name = "BtnModificarCliente";
-            this.BtnModificarCliente.Size = new System.Drawing.Size(75, 23);
-            this.BtnModificarCliente.TabIndex = 8;
-            this.BtnModificarCliente.Text = "Ver";
-            this.BtnModificarCliente.UseVisualStyleBackColor = true;
-            this.BtnModificarCliente.Click += new System.EventHandler(this.BtnModificarCliente_Click);
-            // 
-            // ModificarCliente
-            // 
-            this.ModificarCliente.AutoSize = true;
-            this.ModificarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModificarCliente.Location = new System.Drawing.Point(494, 298);
-            this.ModificarCliente.Name = "ModificarCliente";
-            this.ModificarCliente.Size = new System.Drawing.Size(157, 25);
-            this.ModificarCliente.TabIndex = 9;
-            this.ModificarCliente.Text = "Modificar Cliente";
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(318, 68);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 93);
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
             // 
             // MenuCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.ModificarCliente);
-            this.Controls.Add(this.BtnModificarCliente);
+            this.BackColor = System.Drawing.Color.NavajoWhite;
+            this.ClientSize = new System.Drawing.Size(781, 480);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.BtnListaCliente);
             this.Controls.Add(this.ListaClientetext);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnVerElimCliente);
-            this.Controls.Add(this.EliminarText);
-            this.Controls.Add(this.btnVerInUsuario);
-            this.Controls.Add(this.IngresarText);
             this.Name = "MenuCliente";
             this.Text = "MenuCliente";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label IngresarText;
-        private System.Windows.Forms.Button btnVerInUsuario;
-        private System.Windows.Forms.Label EliminarText;
-        private System.Windows.Forms.Button btnVerElimCliente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label ListaClientetext;
         private System.Windows.Forms.Button BtnListaCliente;
-        private System.Windows.Forms.Button BtnModificarCliente;
-        private System.Windows.Forms.Label ModificarCliente;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

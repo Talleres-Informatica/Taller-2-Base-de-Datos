@@ -22,28 +22,10 @@ namespace Taller_2___base_datos
 
         }
 
-        private void btnVerInUsuario_Click(object sender, EventArgs e)
-        {
-            IngresarUsuario ingresarUsuario = new IngresarUsuario();
-            ingresarUsuario.Show();
-        }
-
-        private void btnVerElimCliente_Click(object sender, EventArgs e)
-        {
-            EliminarCliente eliminarCliente = new EliminarCliente();
-            eliminarCliente.Show();
-        }
-
         private void BtnListaCliente_Click(object sender, EventArgs e)
         {
             ListaCliente listaCliente = new ListaCliente();
             listaCliente.Show();
-        }
-
-        private void BtnModificarCliente_Click(object sender, EventArgs e)
-        {
-            ModificarClientecs modificarCliente = new ModificarClientecs();
-            modificarCliente.Show();
         }
 
     }

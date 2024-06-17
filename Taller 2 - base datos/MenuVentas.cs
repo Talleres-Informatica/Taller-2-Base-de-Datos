@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Taller_2___base_datos
 {
-    public partial class RealizarVenta : Form
+    public partial class MenuVentas : Form
     {
-        public RealizarVenta()
+        public MenuVentas()
         {
             InitializeComponent();
         }
@@ -34,6 +34,13 @@ namespace Taller_2___base_datos
         private void RealizarVenta_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnVentasCliente_Click(object sender, EventArgs e)
+        {
+            // ACCEDER A VENTAS CLIENTE
+            VentasCliente cliente = new VentasCliente();
+            cliente.Show();
         }
     }
 }

@@ -36,6 +36,13 @@ namespace Taller_2___base_datos
 
         private void BtnIngresarCliente_Click(object sender, EventArgs e)
         {
+            // validaciones
+            if (string.IsNullOrWhiteSpace(NombreInput.Text) || string.IsNullOrWhiteSpace(CiudadInput.Text) || ListaCliente.SelectedItem == null)
+            {
+                MessageBox.Show("No puedes dejar campos vacíos");
+                return;
+            }
+
             string query = "INSERT INTO cliente (nombre, ciudad, tipo, estado) VALUES (@nombre, @ciudad, @tipo, 0)";
 
             if (ListaCliente.Text == "Normal")
@@ -68,6 +75,16 @@ namespace Taller_2___base_datos
             {
                 MessageBox.Show("debes ingresar un tipo de cliente");
             }
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IngresarUsuario_Load(object sender, EventArgs e)
+        {
 
         }
     }

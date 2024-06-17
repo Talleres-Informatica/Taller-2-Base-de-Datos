@@ -50,7 +50,6 @@ C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\ob
 C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.IngresarProducto.resources
 C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.IngresarUsuario.resources
 C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.Properties.Resources.resources
-C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.RealizarVenta.resources
 C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller 2 - base datos.csproj.GenerateResource.cache
 C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller 2 - base datos.csproj.CoreCompileInputs.cache
 C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller 2.5FC09BD6.Up2Date
@@ -67,3 +66,7 @@ C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\ob
 C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.ModificarClientecs.resources
 C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.IngresarVenta.resources
 C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.VentasCliente.resources
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.MenuVentas.resources
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.IniciarSesion.resources
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.MenuAdmin.resources
+C:\Users\pamev\Desktop\TalleresBD\Taller 2 - Base datos\Taller 2 - base datos\obj\Debug\Taller_2___base_datos.PrecioProducto.resources

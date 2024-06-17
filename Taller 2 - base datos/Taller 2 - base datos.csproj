@@ -139,6 +139,12 @@
     <Compile Include="IngresarVenta.Designer.cs">
       <DependentUpon>IngresarVenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="IniciarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniciarSesion.Designer.cs">
+      <DependentUpon>IniciarSesion.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,12 @@
     </Compile>
     <Compile Include="ListaVenta.Designer.cs">
       <DependentUpon>ListaVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAdmin.Designer.cs">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuCliente.cs">
       <SubType>Form</SubType>
@@ -181,13 +193,19 @@
     <Compile Include="ModificarProducto.Designer.cs">
       <DependentUpon>ModificarProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RealizarVenta.cs">
+    <Compile Include="PrecioProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RealizarVenta.Designer.cs">
-      <DependentUpon>RealizarVenta.cs</DependentUpon>
+    <Compile Include="PrecioProducto.Designer.cs">
+      <DependentUpon>PrecioProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MenuVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuVentas.Designer.cs">
+      <DependentUpon>MenuVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="VentasCliente.cs">
       <SubType>Form</SubType>
@@ -213,6 +231,9 @@
     <EmbeddedResource Include="IngresarVenta.resx">
       <DependentUpon>IngresarVenta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IniciarSesion.resx">
+      <DependentUpon>IniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListaCliente.resx">
       <DependentUpon>ListaCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -221,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListaVenta.resx">
       <DependentUpon>ListaVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdmin.resx">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuCliente.resx">
       <DependentUpon>MenuCliente.cs</DependentUpon>
@@ -234,6 +258,9 @@
     <EmbeddedResource Include="ModificarProducto.resx">
       <DependentUpon>ModificarProducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PrecioProducto.resx">
+      <DependentUpon>PrecioProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -243,8 +270,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RealizarVenta.resx">
-      <DependentUpon>RealizarVenta.cs</DependentUpon>
+    <EmbeddedResource Include="MenuVentas.resx">
+      <DependentUpon>MenuVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VentasCliente.resx">
       <DependentUpon>VentasCliente.cs</DependentUpon>

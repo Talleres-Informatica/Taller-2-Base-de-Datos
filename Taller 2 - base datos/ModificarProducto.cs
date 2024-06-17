@@ -17,6 +17,10 @@ namespace Taller_2___base_datos
         public ModificarProducto()
         {
             InitializeComponent();
+
+            StockNuevoText.Enabled = false;
+            
+            BtnActualizarStock.Enabled = false;
         }
 
         private void ModificarProducto_Load(object sender, EventArgs e)
@@ -38,21 +42,45 @@ namespace Taller_2___base_datos
 
         private void ListaProductos_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+            // Verifica si se ha seleccionado un producto
+            if (ListaProductos.SelectedItem != null)
+            {
+                // Habilita botones y inputs
+                StockNuevoText.Enabled = true;
+                BtnActualizarStock.Enabled = true;
+            }
+
             //Establecer stock Actual de un producto
             string query = "SELECT stockProducto FROM producto WHERE nombreProducto = @nombreProducto";
             string[] parameters = { "@nombreProducto", ListaProductos.Text };
             string stock = ConnectMySQL.Instance.SelectQueryScalar(query, parameters);
             StockActualText.Text = stock;
-
-            //establece precio Actual de un preducto
-            string query2 = "SELECT precioProducto FROM producto WHERE nombreProducto = @nombreProducto";
-            string[] parameters2 = { "@nombreProducto", ListaProductos.Text };
-            string precio = ConnectMySQL.Instance.SelectQueryScalar(query2, parameters2);
-            PrecioActualText.Text = precio;
         }
 
         private void BtnActualizarStock_Click(object sender, EventArgs e)
         {
+
+
+            // validaciones
+            if (string.IsNullOrWhiteSpace(StockNuevoText.Text))
+            {
+                MessageBox.Show("Ingrese un nuevo stock antes de modificar el stock del producto");
+                return;
+            }
+
+            // validaciones
+            int nuevoStock;
+
+            // Validar que el valor ingresado sea un número entero positivo
+            if (!int.TryParse(StockNuevoText.Text, out nuevoStock) || nuevoStock < 0)
+            {
+                MessageBox.Show("Ingrese una cantidad válida para actualizar el stock.");
+                return;
+            }
+
+            
+
             //consulta a sql
             string query = "UPDATE producto SET stockProducto = @stockProducto WHERE nombreProducto = @nombreProducto";
 
@@ -70,24 +98,7 @@ namespace Taller_2___base_datos
 
         }
 
-        private void BtnActualizarPrecio_Click(object sender, EventArgs e)
-        {
-            //consulta sql
-            string query = "UPDATE producto SET precioProducto = @precioProducto WHERE nombreProducto = @nombreProducto";
-                        
-            //que hacer en sql
-            MySqlParameter[] parameters =
-            {
-                new MySqlParameter("@precioProducto", PrecioNuevoText.Text),
-                new MySqlParameter("@nombreProducto", ListaProductos.Text)
-            };
-
-            ConnectMySQL.Instance.ExecuteQuery(query,parameters);
-
-
-            MessageBox.Show("Precio actualizado con exito");
-
-        }
+        
                        
     }
 }

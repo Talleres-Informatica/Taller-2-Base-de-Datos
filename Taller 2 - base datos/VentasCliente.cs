@@ -30,26 +30,25 @@ namespace Taller_2___base_datos
             string nombre = NombreBuscar.Text;
             DateTime fecha = fechaBuscar.Value;
 
-            string query = "SELECT ";
-            /*
-            SELECT v.idVenta, v.idCliente,
-            FROM cliente c, venta v
-            WHERE 
-            */
-            /*
-            string query = "INSERT INTO venta ( idCliente, fecha) VALUES (@idCliente, @fecha)";
-                        
-            MySqlParameter[] parameters =
-                {
-                new MySqlParameter("@idVenta", ListaCliente.Text),
-                new MySqlParameter("@idCliente", id),
-                new MySqlParameter("@fecha", fechaBuscar)
-            };
-            ConnectMySQL.Instance.ExecuteQuery(query, parameters);
-            MessageBox.Show("Cliente normal ingresado con exito");
-            //TODO: HACER ERROR
-            */
+            // Validar las entradas
+            if (string.IsNullOrEmpty(nombre))
+            {
+                MessageBox.Show("Por favor ingrese un nombre.");
+                return;
+            }
 
+            string fechaFormateada = fecha.ToString("yyyy-MM-dd");
+            
+            string query = "SELECT v.fecha, dv.idProducto, p.nombreProducto, dv.cantidadProducto " +
+                           "FROM venta v " +
+                           "JOIN detalleventa dv ON v.idVenta = dv.idVenta " +
+                           "JOIN producto p ON dv.idProducto = p.idProducto " +
+                           "JOIN cliente c ON v.idCliente = c.id " +
+                           "WHERE v.fecha = '" +fechaFormateada+"' AND c.nombre = '"+nombre+"'";
+
+            DataTable data = ConnectMySQL.Instance.SelectQuery(query);
+            dataVentasCliente.DataSource = data;
+            
         }
 
         

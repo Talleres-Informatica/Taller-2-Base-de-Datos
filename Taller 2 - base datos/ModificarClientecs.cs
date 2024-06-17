@@ -14,13 +14,20 @@ namespace Taller_2___base_datos
 {
     public partial class ModificarClientecs : Form
     {
+        
+
         public ModificarClientecs()
         {
             InitializeComponent();
-        }
 
+            BtnNormal.Enabled = false;
+            BtnPremium.Enabled = false;
+            
+        }
+        
         private void ModificarClientecs_Load(object sender, EventArgs e)
         {
+            
             //consulta a sql
             string query = "SELECT nombre FROM cliente WHERE estado = 0";
 
@@ -67,6 +74,15 @@ namespace Taller_2___base_datos
             ConnectMySQL.Instance.ExecuteQuery(query, parameters);
 
             MessageBox.Show("Cliente cambiado a Premium con exito");
+        }
+
+        private void ListaCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ListaCliente.SelectedItem != null)
+            {
+                BtnPremium.Enabled = true;
+                BtnNormal.Enabled = true;
+            }
         }
     }
 }

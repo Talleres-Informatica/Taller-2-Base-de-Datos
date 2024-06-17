@@ -42,9 +42,14 @@ namespace Taller_2___base_datos
 
         private void BtnVerVenta_Click(object sender, EventArgs e)
         {
-            RealizarVenta realizarVenta = new RealizarVenta();
+            MenuVentas realizarVenta = new MenuVentas();
             realizarVenta.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            IniciarSesion iniciarSesion = new IniciarSesion();
+            iniciarSesion.Show();
+        }
     }
 }

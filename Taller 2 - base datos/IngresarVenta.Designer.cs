@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IngresarVenta));
             this.TituloVentaCliente = new System.Windows.Forms.Label();
             this.TextoIngreseProducto = new System.Windows.Forms.Label();
             this.NombreProductoTexto = new System.Windows.Forms.TextBox();
@@ -45,8 +46,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.CantidadVenderTexto = new System.Windows.Forms.TextBox();
             this.TextoIngreseCantidad = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVentas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVentasProductos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // TituloVentaCliente
@@ -218,11 +223,34 @@
             this.TextoIngreseCantidad.Text = "Ingrese la cantidad";
             this.TextoIngreseCantidad.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.Location = new System.Drawing.Point(232, 227);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(81, 83);
+            this.pictureBox4.TabIndex = 21;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(232, 52);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(91, 83);
+            this.pictureBox2.TabIndex = 22;
+            this.pictureBox2.TabStop = false;
+            // 
             // IngresarVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(1101, 485);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.TextoIngreseCantidad);
             this.Controls.Add(this.CantidadVenderTexto);
             this.Controls.Add(this.label2);
@@ -244,6 +272,8 @@
             this.Text = "IngresarVenta";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVentas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVentasProductos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,5 +298,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox CantidadVenderTexto;
         private System.Windows.Forms.Label TextoIngreseCantidad;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

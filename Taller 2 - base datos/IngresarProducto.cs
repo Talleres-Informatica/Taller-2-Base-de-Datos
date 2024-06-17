@@ -36,6 +36,29 @@ namespace Taller_2___base_datos
 
         private void BtnIngresarProducto_Click(object sender, EventArgs e)
         {
+            // validaciones
+            if (string.IsNullOrWhiteSpace(NombreProductoInput.Text) || string.IsNullOrWhiteSpace(StockProductoInput.Text) || string.IsNullOrWhiteSpace(PrecioProductoInput.Text))
+            {
+                MessageBox.Show("No puedes dejar campos vacíos");
+                return;
+            }
+
+            // validaciones
+            int nuevoStock;
+
+            // Validar que el valor ingresado sea un número entero positivo
+            if (!int.TryParse(StockProductoInput.Text, out nuevoStock) || nuevoStock < 0)
+            {
+                MessageBox.Show("Ingrese una cantidad válida para el stock.");
+                return;
+            }
+            if (!int.TryParse(PrecioProductoInput.Text, out nuevoStock) || nuevoStock <= 0)
+            {
+                MessageBox.Show("Ingrese una cantidad válida para el precio.");
+                return;
+            }
+
+
             string query = "INSERT INTO producto (nombreProducto, stockProducto, precioProducto, estado) VALUES (@nombreProducto, @stockProducto, @precioProducto, 0);";
 
             MySqlParameter[] parameters =
